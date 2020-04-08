@@ -11,6 +11,7 @@ title.addEventListener('mouseover', function(event){
 const anyKey = document.querySelector('nav')
     anyKey.addEventListener('keydown', function(event){
     event.target.style.backgroundColor = 'orange'
+    
 })
 //when you hover over fun image size increases by .3 in 2s
 const magnify = document.querySelector(".img-fluid")
@@ -48,6 +49,12 @@ const diffImg = document.querySelector('.img-fluid')
 const webpage = document.querySelector('body');
     webpage.addEventListener('click', function(event){
     event.target.style.backgroundColor = 'yellow';
-
 })
+
+//stop home link from refreshing page
+
+const killLink = document.querySelector('.nav');
+    killLink.addEventListener('click', function(event){
+        event.preventDefault();
+    })
 
